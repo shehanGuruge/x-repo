@@ -1,0 +1,29 @@
+{
+  "name": "network",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/network/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/shared/network",
+        "main": "shared/network/src/index.ts",
+        "tsConfig": "shared/network/tsconfig.lib.json",
+        "assets": ["shared/network/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "shared/network/**/*.ts",
+          "shared/network/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

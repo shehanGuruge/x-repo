@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@x-repo/network": ["shared/network/src/index.ts"],
+      "@x-repo/theme": ["shared/theme/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

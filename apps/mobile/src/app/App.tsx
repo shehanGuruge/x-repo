@@ -11,13 +11,17 @@ import {
   Linking,
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import {abc, abc1} from '@x-repo/theme'
+//import { useGetAnimeListQuery } from '@x-repo/network';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
 
+  //const {data, error, loading} = useGetAnimeListQuery({variables:{page: 1, perPage:10}})
   return (
     <>
+    {/* {console.log('DATA : ', data)} */}
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -30,7 +34,7 @@ export const App = () => {
           <View style={styles.section}>
             <Text style={styles.textLg}>Hello there,</Text>
             <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
-              Welcome Mobile 👋
+             {' Welcome Mobile' + abc + abc1}
             </Text>
           </View>
           <View style={styles.section}>
