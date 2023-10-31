@@ -11,7 +11,8 @@ import {
   Linking,
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
-import {abc, abc1} from '@x-repo/theme'
+import {abc} from '@x-repo/theme'
+import { network } from '@x-repo/network';
 //import { useGetAnimeListQuery } from '@x-repo/network';
 
 export const App = () => {
@@ -34,7 +35,7 @@ export const App = () => {
           <View style={styles.section}>
             <Text style={styles.textLg}>Hello there,</Text>
             <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
-             {' Welcome Mobile' + abc + abc1}
+             {' Welcome Mobile' + abc + network()}
             </Text>
           </View>
           <View style={styles.section}>
