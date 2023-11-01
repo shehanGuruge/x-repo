@@ -2,14 +2,13 @@
 import { ApolloProvider } from '@apollo/client';
 import React from 'react';
 import App from './App';
-//import  { client } from '@x-repo/network';
+import { client } from '@x-repo/network';
 
 export const ParentApp = () => {
-
   return (
-    // <ApolloProvider client={client}>
-       <App/>
-    // </ApolloProvider>
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   );
 };
 
