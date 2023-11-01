@@ -18,7 +18,8 @@
     "expo-status-bar": "~1.6.0",
     "@babel/core": "*",
     "tslib": "*",
-    "@apollo/client": "*"
+    "@apollo/client": "*",
+    "@nx/devkit": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp package-lock.json apps/mobile",
